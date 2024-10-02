@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+</head>
+<style>
+    .container-fluid{
+        height: 150px;
+        background-color: rgb(255, 255, 255);
+    }
+   .titulo{
+    display: flex;justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+   }
+   .sub1{
+    display: flex;justify-content: center;
+  font-family: "Bad Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.banner{
+            margin-left: 60px;
+            margin-bottom: 50px;
+           margin-top: 20px;
+        }
+    
+  .linha{
+    width: 92%;
+    margin-left: 58px;
+    margin-right: 58px;
+    
+  }
+
+  .quadrado1,.quadrado2, .quadrado3, .quadrado4{
+           display: inline-block;
+           
+            
+        }
+        .quadrado1{
+           margin-left: 20px;
+            
+        }
+        .quadrado2{
+           margin-left: 20px;
+           
+        }
+        .imagem1{
+            width: 260px;
+            height: 260px;
+            
+        }
+        .imagem2{
+            width: 260px;
+            height: 260px;
+
+        }
+        .texto{
+            display: flex; justify-content: center;
+        }
+        .conteudo{
+            
+        }
+
+        .texto2{
+            display: flex; justify-content: center;
+        }
+        .conteudo2{
+            
+        }
+        .quadrado3{
+           margin-left: 20px;
+            
+        }
+        .quadrado4{
+           margin-left: 20px;
+           
+        }
+        .meio{
+          display: flex; justify-content: center;
+          margin-bottom: 50px;
+        }
+
+
+
+        
+        .produto1,.produto2{
+           display: inline-block;
+           
+            
+        }
+        .produto1{
+           border-style: solid;
+           border-width: 1px;
+           border-color: lightgray;
+           margin-left: 10px;
+            
+        }
+        .produto2{
+            border-style: solid;
+           border-width: 1px;
+           border-color: lightgray;
+           margin-left: 10px;
+           
+        }
+        .imagem3{
+            width: 240px;
+            height: 240px;
+            
+        }
+        .imagem4{
+            width: 240px;
+            height: 240px;
+
+        }
+        .texto{
+            display: flex; justify-content: center;
+        }
+        .conteudo{
+            
+        }
+
+        .texto2{
+            display: flex; justify-content: center;
+        }
+        .conteudo2{
+            
+        }
+
+        .meio2{
+          display: flex; justify-content: center;
+        }
+
+        
+
+       .meio3{
+        display: flex; justify-content: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+       }
+ 
+       .promoção{
+        margin-top: 50px;
+        display: flex; justify-content: center;
+        
+       font-family: "Bad Script", cursive;
+       font-weight: 400;
+       font-style: normal;
+       margin-bottom: 50px;
+       }
+
+
+
+
+
+
+
+       .rodapé{
+        margin-top: 30px;
+        height: 500px;
+        background: lightgray;
+        padding: 28px;
+        font-size: 10px;
+        
+       }
+
+       .insta{
+         width: 30px;
+         height: 30px;
+        float: right;
+        margin-left: 5px;
+       }
+       
+       .linha{
+        margin-top: 50px;
+       }
+
+       .tituloR{
+        font-size: 13px;
+        margin-bottom: 15px;
+        margin-left: 5px;
+       }
+        
+        .textoR{
+            margin-left: 35px;
+        }
+
+        .textoR2, .textoR, .textoR3{
+            display: inline-block;
+            font-size: 12px;
+        }
+          
+        .textoR2{
+           margin-left: 25px;
+        }
+
+        .tituloR2{
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .textoR3{
+            margin-left: 25px;
+        }
+
+        .tituloR3{
+            font-size: 13px;
+            margin-bottom: 15px;
+            margin-top: 50px;
+        }
+         
+        .todosA{
+           position: relative;
+           color: #fff;
+           text-decoration: none;  
+        }
+        .todosA:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: #8b8989;
+        visibility: hidden;
+       -webkit-transform: scaleX(0);
+        transform: scaleX(0,5);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.0s ease-in-out 0s;
+        }
+        .todosA:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(0,3);
+        }
+
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" ><img src="img/IMG_20240927_234603_504.jpg" alt="Bootstrap" width="160" height="160" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Produtos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="shampos.html">Shampoos</a></li>
+                  <li><a class="dropdown-item" href="condicionadores.html">Condicionadores</a></li>
+                  <li><a class="dropdown-item" href="cremes.html">Cremes</a></li>
+                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="ingredientes.html">Ingredientes</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="nossa história.html">Nossa História</a>
+              </li>
+                  
+                </ul>
+              </li>
+            </ul>
+            <div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="titulo">
+        <h1 >
+            CONDICIONADORES
+        </h1>
+    </div>
+        <div class="sub1">
+        <h3>
+            PARA TODAS AS NECESSIDADE DOS SEUS FIOS
+        </h3>
+       </div>
+      
+
+       <hr class="linha">
+       <div class="banner">
+        <img src="img/banner4.jpg" alt="">
+    </div>
+    <div class="meio">
+    <div class="quadrado1">
+      <img src="img/cabelo crespo redonda.png" class="imagem1" alt="">
+      <div class="texto">
+      <h3>
+          CRESPO
+      </h3>
+  </div>
+  </div>
+  <div class="quadrado2">
+      <img src="img/cabelo cacheado redonda.png" class="imagem2" alt="">
+      <div class="texto2">
+          <h3>
+              CACHEADO
+          </h3>
+      </div>
+  </div>
+
+  <div class="quadrado3">
+      <img src="img/cabelo ondulado redonda.png" class="imagem1" alt="">
+      <div class="texto">
+      <h3>
+          ONDULADO
+      </h3>
+  </div>
+  </div>
+  <div class="quadrado4">
+    <img src="img/cabelo-liso-fotor-20240929223135.png" class="imagem2" alt="">
+    <div class="texto2">
+        <h3>
+            LISO
+        </h3>
+    </div>
+</div>
+</div> 
+
+<div class="promoção">
+  <h1>
+     Lançamentos
+  </h1>
+</div>
+ 
+<div class="meio2">
+
+<div class="produto1">
+  <img src="img/Designer (33).jpeg" class="imagem3" alt="">
+  <div class="texto">
+  <h6>
+      Condicionador Frizz Control
+  </h6>
+</div>
+<div class="conteudo">
+  <p>
+      Reduz os Frizz Na primeira <br>
+      Lavagem
+  </p>
+</div>
+</div>
+<div class="produto2">
+  <img src="img/Designer (34).jpeg" class="imagem4" alt="">
+  <div class="texto2">
+      <h6>
+          Condicionador Cachos Mágicos
+      </h6>
+  </div>
+  <div class="conteudo2">
+      <p>
+          Promove a Hidratação e <br>
+          Nutrição que os Cachos Precisam
+      </p>
+  </div>
+</div>
+
+<div class="produto1">
+  <img src="img/Designer (35).jpeg" class="imagem3" alt="">
+  <div class="texto">
+  <h6>
+      Meus Cachos Minhas Regras
+  </h6>
+</div>
+<div class="conteudo">
+  <p>
+      Para As Cacheadas que desejam <br>
+      Brilho Extremo
+  </p>
+</div>
+</div>
+<div class="produto2">
+  <img src="img/promoção5.jpeg" class="imagem4" alt="">
+  <div class="texto2">
+      <h6>
+          Condicionador Volpe Men
+      </h6>
+  </div>
+  <div class="conteudo2">
+      <p>
+          Estimula o Crescimento <br>
+          Poder Antiqueda
+      </p>
+  </div>
+</div>
+<div class="produto2">
+  <img src="img/Designer (26).jpeg" class="imagem4" alt="">
+  <div class="texto2">
+      <h6>
+          Condicionador Volpe Men Cahos
+      </h6>
+  </div>
+  <div class="conteudo2">
+      <p>
+          Definição Prolongada e <br>
+          Hidratação Dos Fios
+      </p>
+  </div>
+</div>
+
+</div>
+
+<div class="promoção">
+  <h1>
+     Condicionadores Mais Vendidos
+  </h1>
+</div>
+
+
+<div class="meio2">
+
+  <div class="produto1">
+    <img src="img/Designer (40).jpeg" class="imagem3" alt="">
+    <div class="texto">
+    <h6>
+        Condicionador Liso <br>
+        dos Sonhos
+    </h6>
+  </div>
+  <div class="conteudo">
+    <p>
+        Mantem os Cabelos Macios <br>
+        e Renovados
+    </p>
+  </div>
+  </div>
+  <div class="produto2">
+    <img src="img/Designer (41).jpeg" class="imagem4" alt="">
+    <div class="texto2">
+        <h6>
+            Condicionador Loiro Expert
+        </h6>
+    </div>
+    <div class="conteudo2">
+        <p>
+           Prolonga e Proteje o <br>
+           Loiro e Cabelos Pintados
+        </p>
+    </div>
+  </div>
+  
+  <div class="produto1">
+    <img src="img/Designer (38).jpeg" class="imagem3" alt="">
+    <div class="texto">
+    <h6>
+        Condicionador Xó Pontas Duplas
+    </h6>
+  </div>
+  <div class="conteudo">
+    <p>
+        Entrega Cabelos Disciplinados, <br>
+        Brilhantes e livre de Pontas Duplas
+    </p>
+  </div>
+  </div>
+  <div class="produto2">
+    <img src="img/Designer (42).jpeg" class="imagem4" alt="">
+    <div class="texto2">
+        <h6>
+            Condicionador Regeneração <br>
+            Pós-Química
+        </h6>
+    </div>
+    <div class="conteudo2">
+        <p>
+            Garanta Fios Saudáveis Mesmo <br>
+            Após Procedimentos Químicos
+        </p>
+    </div>
+  </div>
+  <div class="produto2">
+    <img src="img/promoção3.jpeg" class="imagem4" alt="">
+    <div class="texto2">
+        <h6>
+            Combo Condicionador
+        </h6>
+    </div>
+    <div class="conteudo2">
+        <p>
+            Condicionador pós-química + <br>
+            condicionador hidratação intensa
+        </p>
+    </div>
+  </div>
+  
+  </div>
+    
+  <div class="promoção">
+    <h1>
+       Para Presentear!
+    </h1>
+  </div>
+
+  <div class="meio3">
+
+    <div class="produto1">
+      <img src="img/promoção4.jpeg" class="imagem3" alt="">
+      <div class="texto">
+      <h6>
+          Kit Completo Mix Óleos <br>
+          Poderosos
+      </h6>
+    </div>
+    <div class="conteudo">
+      <p>
+          Trata Fios Rígidos e Superelásticos <br>
+          Devolvendo Sua Resistência
+      </p>
+    </div>
+    </div>
+    <div class="produto2">
+      <img src="img/card1.jpeg" class="imagem4" alt="">
+      <div class="texto2">
+          <h6>
+              Combo Nutri Rose <br>
+              Shampoo 400ml + <br>
+              condicionador 400ml
+          </h6>
+      </div>
+      <div class="conteudo2">
+          <p>
+              Entregam Fios Saudáveis e <br>
+              Livre de Pontas Duplas
+          </p>
+      </div>
+    </div>
+    
+    <div class="produto1">
+      <img src="img/promoção1.jpeg" class="imagem3" alt="">
+      <div class="texto">
+      <h6>
+          Combo Volpe Men-Therapy
+      </h6>
+    </div>
+    <div class="conteudo">
+      <p>
+          Acelera o Crescimento, <br>
+          Poder Antiqueda
+
+      </p>
+    </div>
+    </div>
+    <div class="produto2">
+      <img src="img/Designer (39).jpeg" class="imagem4" alt="">
+      <div class="texto2">
+          <h6>
+             Combo Resgata Cachos
+            
+          </h6>
+      </div>
+      <div class="conteudo2">
+          <p>
+              Resgata Para Seus Fios para <br>
+              Novos Momentos de Autocuidado
+          </p>
+      </div>
+    </div>
+    <div class="produto2">
+      <img src="img/card4.jpeg" class="imagem4" alt="">
+      <div class="texto2">
+          <h6>
+            Nutri-Supplement Sérum
+          </h6>
+      </div>
+      <div class="conteudo2">
+          <p>
+            o verdadeiro aliado de um <br>
+            cabelo hidratado e saudável.
+          </p>
+      </div>
+    </div>
+  </div>  
+
+  <footer class="rodapé">
+    <div class="textoR">
+        <h1 class="tituloR2" style="color: black;">Representantes </h1> <br> 
+        <a href="ffffffffff" style="color: black;" class="todosA">Já sou Representante <br></a>
+        <a href="ffffffffff" style="color: black;" class="todosA">Quero Ser Representante <br></a>
+        <a href="ffffffffff" style="color: black;" class="todosA">Encontre um Representante<br></a>
+<br>
+<h1 class="tituloR2" style="color: black;">Institucional </h1> <br> 
+<a href="ffffffffff" style="color: black;" class="todosA">Quem Somos <br></a>
+<a href="ffffffffff" style="color: black;" class="todosA">Amara, Seu Brilho é Único! <br></a>
+<a href="ffffffffff" style="color: black;" class="todosA">Trabalhe Conosco <br></a>
+<a href="ffffffffff" style="color: black;" class="todosA">Sustentabilidade <br></a>
+<a href="ffffffffff" style="color: black;" class="todosA">Dúvidas<br></a>
+</div>
+
+<div class="textoR2">
+    <h1 class="tituloR" style="color: black;">Sobre </h1> <br> 
+    <a href="ffffffffff" style="color: black;" class="todosA">Promoções <br></a>
+    <a href="ffffffffff" style="color: black;" class="todosA">Mapa do site <br></a>
+    <a href="ffffffffff" style="color: black;" class="todosA">Procon <br></a>
+    <a href="ffffffffff" style="color: black;" class="todosA">Politica de Privacidade <br></a>
+    <a href="ffffffffff" style="color: black;" class="todosA">Proteja-se Contra Fraudes <br></a>
+    <a href="ffffffffff" style="color: black;" class="todosA">Preferências de Cokkies<br></a>
+    <a href="ffffffffff" style="color: black;" class="todosA">Consumidor.gov.br <br></a>
+    <a href="ffffffffff" style="color: black;" class="todosA">Código de Defesa do Consumidor <br></a>
+    <a href="ffffffffff" style="color: black;" class="todosA">Termos de Uso <br></a>
+    <a href="ffffffffff" style="color: black;" class="todosA">Trocas e Devoluções <br></a>
+    <a href="ffffffffff" style="color: black;" class="todosA">Entregas <br></a>
+    <a href="ffffffffff" style="color: black;" class="todosA">Carga Tributária <br></a>
+</div>
+
+<div class="textoR3">
+    <h1 class="tituloR2" style="color: black;">Departamentos </h1> <br> 
+    <a href="ffffffffff" style="color: black;" class="todosA">Cabelos <br></a>
+    <a href="ffffffffff" style="color: black;" class="todosA">Cronograma Capilar <br></a>
+    <a href="ffffffffff" style="color: black;" class="todosA">Maquiagem <br></a>
+    <a href="ffffffffff" style="color: black;" class="todosA">Produtos Masculinos <br></a>
+    <a href="ffffffffff" style="color: black;" class="todosA">Teste de Tom de Base <br></a>
+    <a href="ffffffffff" style="color: black;" class="todosA">Skincare <br></a>
+    <a href="ffffffffff" style="color: black;" class="todosA">Perfumaria <br></a>
+    <a href="ffffffffff" style="color: black;" class="todosA">Teste da Fragrância Perfeita <br></a>
+    <a href="ffffffffff" style="color: black;" class="todosA">Corpo e Banho <br></a>
+    <a href="ffffffffff" style="color: black;" class="todosA">Encontre o Presente ideal! <br></a>
+    <a href="ffffffffff" style="color: black;" class="todosA">Beauty Week <br></a>
+    <a href="ffffffffff" style="color: black;" class="todosA">Guia da Beleza Amara <br></a>
+</div>
+    
+    <div>
+       <a href="#"><img src="img/icone insta.png" alt="instagram" class="insta"></a>
+       <a href="#"><img src="img/icone_twitter-removebg-preview.png" alt="instagram" class="insta"></a>
+       <a href="#"><img src="img/icone_yt-removebg-preview_279x168__1__147x145-removebg-preview.png" alt="instagram" class="insta"></a>
+       <a href="#"><img src="img/icone_face_158x153-removebg-preview.png" alt="instagram" class="insta"></a>
+    </div>   
+    <hr class="linha">
+</footer>
+
+
+    
+</body>
+</html>

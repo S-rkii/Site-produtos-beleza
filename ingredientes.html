@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style> 
+    .container-fluid{
+        height: 150px;
+        background-color: rgb(255, 255, 255);
+    }
+    .imagemP{
+        width: 550px;
+        height: 450px;
+        margin-top: 20px; 
+        box-shadow: 10px 20px grey;
+        margin-bottom: 100px;
+        margin-right: 50px;
+    }
+    .divT{
+        background-color: rgb(255, 255, 255);
+        height: 200px;
+        width: 400px;
+        margin-top: 20px ;
+        margin-left: 20px;
+        margin-right: 80px;
+       
+    }
+    .texto{
+        font-size: 1,5cm;
+        margin-top: 120px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      
+    }
+       
+
+    .subt{
+        
+        font-family: "Homemade Apple", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2cm;
+    }
+    
+    .imagem, .divT{
+        display: inline-block;
+        
+    }
+    
+    .inicio{
+        display: flex; justify-content: center;
+    }  
+
+    .produto1,.produto2, .produto3, .produto4{
+           display: inline-block;
+           
+            
+        }
+        .produto1{
+           margin-left: 30px;
+            
+        }
+        .produto2, .produto3, .produto4{
+           margin-left: 20px;
+           
+        }
+        .produto5{
+           margin-left: 30px;
+        }
+
+        .imagem3{
+            width: 240px;
+            height: 240px;
+            
+        }
+        .imagem4{
+            width: 290px;
+            height: 180px;
+
+        }
+        .imagem5{
+            width: 290px;
+            height: 180px;
+        }
+        .imagem6{
+            width: 290px;
+            height: 180px;
+        }
+
+
+        .fileira2{
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+
+
+
+
+
+
+        .rodapé{
+        margin-top: 50px;
+        height: 500px;
+        background: lightgray;
+        padding: 28px;
+        font-size: 10px;
+        
+       }
+
+       .insta{
+         width: 30px;
+         height: 30px;
+        float: right;
+        margin-left: 5px;
+       }
+       
+       .linha{
+        margin-top: 50px;
+       }
+
+       .tituloR{
+        font-size: 13px;
+        margin-bottom: 15px;
+        margin-left: 5px;
+       }
+        
+        .textoR{
+            margin-left: 35px;
+        }
+
+        .textoR2, .textoR, .textoR3{
+            display: inline-block;
+            font-size: 12px;
+        }
+          
+        .textoR2{
+           margin-left: 25px;
+        }
+
+        .tituloR2{
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .textoR3{
+            margin-left: 25px;
+        }
+
+        .tituloR3{
+            font-size: 13px;
+            margin-bottom: 15px;
+            margin-top: 50px;
+        }
+         
+        .todosA{
+           position: relative;
+           color: #fff;
+           text-decoration: none;  
+        }
+        .todosA:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: #8b8989;
+        visibility: hidden;
+       -webkit-transform: scaleX(0);
+        transform: scaleX(0,5);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.0s ease-in-out 0s;
+        }
+        .todosA:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(0,3);
+        }
+
+        .todosi{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            
+        }
+        .conteudo{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" ><img src="img/IMG_20240927_234603_504.jpg" alt="Bootstrap" width="160" height="160" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Produtos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="shampos.html">Shampoos</a></li>
+                      <li><a class="dropdown-item" href="condicionadores.html">Condicionadores</a></li>
+                      <li><a class="dropdown-item" href="cremes.html">Cremes</a></li>
+                    </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="ingredientes.html">Ingredientes</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="nossa história.html">Nossa História</a>
+              </li>
+                  
+                </ul>
+              </li>
+            </ul>
+            <div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+     <div class="inicio">
+      <div class="imagem">
+        <img src="img/ingredientes/ingredientesbanner.png" class="imagemP"...">
+      </div>
+      <div class="divT">
+        <h4 class="texto" style="color: rgb(153, 131, 34);">
+            O SEGREDO DOS PRODUTOS AMARA
+        </h4>
+        <h1 class="subt">
+           ingredientes
+        </h1>
+        
+        <p>
+           
+        </p>
+      </div>
+         
+    </div>
+     
+     <div class="todosi">
+    <div class="produto1">
+        <img src="img/ingredientes/ingrediente1.webp"imagem3" alt="">
+        <div class="texto1">
+        <h5>
+            Mistura Pro-V
+        </h5>
+      </div>
+      <div class="conteudo">
+        <p>
+            fórmula Pro-V exclusiva que transforma <br>
+            seus cabelos, tornando-os mais fortes <br>
+            e saudáveis. 
+        </p>
+      </div>
+      </div>
+      <div class="produto2">
+        <img src="img/ingredientes/ingredientes2.webp" class="imagem4" alt="">
+        <div class="texto2">
+            <h5>
+                Óleo de coco
+            </h5>
+        </div>
+        <div class="conteudo">
+            <p>
+                É um dos ingredientes de beleza mais <br>
+                versáteis da natureza, repleto de <br>
+                ácidos graxos e vitaminas essenciais.
+            </p>
+          </div>
+          </div>
+
+        
+          <div class="produto3">
+            <img src="img/ingredientes/ingrediente3.webp" class="imagem5" alt="">
+            <div class="texto1">
+            <h5>
+                Óleo de rícino
+            </h5>
+          </div>
+          <div class="conteudo">
+            <p>
+                É rico em ômega 9, tem poder hidratante <br>
+                e pH balanceado. Conhecido por estimular <br>
+                a produção de colágeno e elastina.
+            </p>
+          </div>
+          </div>
+          <div class="produto4">
+            <img src="img/ingredientes/ingrediente4.webp" class="imagem6" alt="">
+            <div class="texto2">
+                <h5>
+                    Extrato de bambu
+                </h5>
+            </div>
+            <div class="conteudo">
+                <p>
+                    É mais forte que madeira, concreto e <br>
+                    aço e pode ser flexível com o vento, <br>
+                    sem quebrar.
+                </p>
+              </div>
+              </div>
+
+              <div class="fileira2">
+
+              <div class="produto1">
+                <img src="img/ingredientes/inngrediente5.webp"imagem3" alt="">
+                <div class="texto1">
+                <h5>
+                    Cafeína
+                </h5>
+              </div>
+              <div class="conteudo">
+                <p>
+                    Conhecida por promover regeneração <br>
+                    celular, também melhora a circulação <br>
+                    sanguínea.
+                </p>
+              </div>
+              </div>
+              <div class="produto2">
+                <img src="img/ingredientes/ingrediente6.webp" class="imagem4" alt="">
+                <div class="texto2">
+                    <h5>
+                        Biotina
+                    </h5>
+                </div>
+                <div class="conteudo">
+                    <p>
+                        Vitamina do complexo B, essencial <br>
+                        para o corpo, cabelo e unhas. <br>
+                        <br>
+                    </p>
+                  </div>
+                  </div>
+        
+                
+                  <div class="produto3">
+                    <img src="img/ingredientes/ingrediente7.webp" class="imagem5" alt="">
+                    <div class="texto1">
+                    <h5>
+                        Óleo de Argan
+                    </h5>
+                  </div>
+                  <div class="conteudo">
+                    <p>
+                        Contém vitaminas naturais e gorduras <br>
+                        essenciais, melhora a saúde e o brilho. <br>
+                        <br>
+                    </p>
+                  </div>
+                  </div>
+                  <div class="produto4">
+                    <img src="img/ingredientes/ingrediente8.webp" class="imagem6" alt="">
+                    <div class="texto2">
+                        <h5>
+                            Óleo de amêndoas
+                        </h5>
+                    </div>
+                    <div class="conteudo">
+                        <p>
+                            Rico em vitaminas A, B e E. Conhecido <br>
+                            por ser um componente umectante. <br>
+                            <br>
+                        </p>
+                      </div>
+                      </div>
+
+                    </div>
+
+                    <div class="fileira2">
+                    <div class="produto1">
+                        <img src="img/ingredientes/ingrediente9.webp"imagem3" alt="">
+                        <div class="texto1">
+                        <h5>
+                            Vitamina E
+                        </h5>
+                      </div>
+                      <div class="conteudo">
+                        <p>
+                            Ajuda a prevenir a degradação das <br>
+                            células naturais da fibra capilar. <br>
+                            <br>
+                        </p>
+                      </div>
+                      </div>
+                      <div class="produto2">
+                        <img src="img/ingredientes/ingrediente10.webp" class="imagem4" alt="">
+                        <div class="texto2">
+                            <h5>
+                                Ômega 9
+                            </h5>
+                        </div>
+                        <div class="conteudo">
+                            <p>
+                                Conhecido por seus benerfícios <br>
+                                antioxidantes e propriedades <br>
+                                nutritivas.
+                            </p>
+                          </div>
+                          </div>
+                
+                        
+                          <div class="produto3">
+                            <img src="img/ingredientes/ingrediente11.webp" class="imagem5" alt="">
+                            <div class="texto1">
+                            <h5>
+                                Babosa
+                            </h5>
+                          </div>
+                          <div class="conteudo">
+                            <p>
+                                Contém vitaminas, minerais e outros <br>
+                                componentes benéficos. <br>
+                                <br>
+                            </p>
+                          </div>
+                          </div>
+                          <div class="produto4">
+                            <img src="img/ingredientes/ingrediente12.webp" class="imagem6" alt="">
+                            <div class="texto2">
+                                <h5>
+                                    Glicerina
+                                </h5>
+                            </div>
+                            <div class="conteudo">
+                                <p>
+                                    Utilizado por suas suaves propriedades <br>
+                                    hidratantes. <br>
+                                    <br>
+                                </p>
+                              </div>
+                              </div>
+                            </div>
+                            
+
+
+                            <div class="fileira2">
+                                <div class="produto1">
+                                    <img src="img/ingredientes/ingrediente13.webp"imagem3" alt="">
+                                    <div class="texto1">
+                                    <h5>
+                                        Aminoácidos
+                                    </h5>
+                                  </div>
+                                  <div class="conteudo">
+                                    <p>
+                                        São compostos orgânicos que se combinam <br>
+                                        naturalmente para formar proteínas. <br>
+                                        <br>
+                                    </p>
+                                  </div>
+                                  </div>
+                                  <div class="produto2">
+                                    <img src="img/ingredientes/ingrediente14.webp" class="imagem4" alt="">
+                                    <div class="texto2">
+                                        <h5>
+                                            Proteínas
+                                        </h5>
+                                    </div>
+                 <div class="conteudo">
+                      <p>
+                        São responsáveis por cobrir e <br>
+                        proteger a estrutura do cabelo. <br>
+                        <br>
+                      </p>
+                       </div>
+                       </div>
+                            
+                                    
+                        <div class="produto3">
+                       <div class="texto1">
+                        <img src="img/ingredientes/ingrediente15.webp" class="imagem5" alt="">
+                            
+                          <h5>
+                            Extrato de seda
+                             </h5>
+                         </div>
+                       <div class="conteudo">
+                    <p>
+                        Reconhecido por suas propriedades de <br>
+                        suavidade e seu poder protetor. <br>
+                        <br>
+                         </p>
+                       </div>
+                    </div>
+                    <div class="produto4">
+                     <img src="img/ingredientes/ingrediente16.webp" class="imagem6" alt="">
+                         <div class="texto2">
+                             <h5>
+                                Micelas
+                             </h5>
+                             </div>
+                            <div class="conteudo">
+                            <p>
+                                Limpam profundamente e ajudam a <br>
+                                eliminar as impurezas da contaminação. <br>
+                                <br>
+                            </p>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="produto5">
+                            <img src="img/ingredientes/ingrediente17.webp" class="imagem6" alt="">
+                                <div class="texto2">
+                                    <h5>
+                                        Extrato de pérolas
+                                    </h5>
+                                    </div>
+                                   <div class="conteudo">
+                                   <p>
+                                    Composto por minerais e mais <br>
+                                    de 20 aminoácidos. <br>
+                                    <br>
+                                   </p>
+                               </div>
+                               </div>
+        
+                            </div>
+
+                               <footer class="rodapé">
+                                <div class="textoR">
+                                    <h1 class="tituloR2" style="color: black;">Representantes </h1> <br> 
+                                    <a href="ffffffffff" style="color: black;" class="todosA">Já sou Representante <br></a>
+                                    <a href="ffffffffff" style="color: black;" class="todosA">Quero Ser Representante <br></a>
+                                    <a href="ffffffffff" style="color: black;" class="todosA">Encontre um Representante<br></a>
+                            <br>
+                            <h1 class="tituloR2" style="color: black;">Institucional </h1> <br> 
+                            <a href="ffffffffff" style="color: black;" class="todosA">Quem Somos <br></a>
+                            <a href="ffffffffff" style="color: black;" class="todosA">Amara, Seu Brilho é Único! <br></a>
+                            <a href="ffffffffff" style="color: black;" class="todosA">Trabalhe Conosco <br></a>
+                            <a href="ffffffffff" style="color: black;" class="todosA">Sustentabilidade <br></a>
+                            <a href="ffffffffff" style="color: black;" class="todosA">Dúvidas<br></a>
+                            </div>
+                        
+                            <div class="textoR2">
+                                <h1 class="tituloR" style="color: black;">Sobre </h1> <br> 
+                                <a href="ffffffffff" style="color: black;" class="todosA">Promoções <br></a>
+                                <a href="ffffffffff" style="color: black;" class="todosA">Mapa do site <br></a>
+                                <a href="ffffffffff" style="color: black;" class="todosA">Procon <br></a>
+                                <a href="ffffffffff" style="color: black;" class="todosA">Politica de Privacidade <br></a>
+                                <a href="ffffffffff" style="color: black;" class="todosA">Proteja-se Contra Fraudes <br></a>
+                                <a href="ffffffffff" style="color: black;" class="todosA">Preferências de Cokkies<br></a>
+                                <a href="ffffffffff" style="color: black;" class="todosA">Consumidor.gov.br <br></a>
+                                <a href="ffffffffff" style="color: black;" class="todosA">Código de Defesa do Consumidor <br></a>
+                                <a href="ffffffffff" style="color: black;" class="todosA">Termos de Uso <br></a>
+                                <a href="ffffffffff" style="color: black;" class="todosA">Trocas e Devoluções <br></a>
+                                <a href="ffffffffff" style="color: black;" class="todosA">Entregas <br></a>
+                                <a href="ffffffffff" style="color: black;" class="todosA">Carga Tributária <br></a>
+                            </div>
+                        
+                            <div class="textoR3">
+                                <h1 class="tituloR2" style="color: black;">Departamentos </h1> <br> 
+                                <a href="ffffffffff" style="color: black;" class="todosA">Cabelos <br></a>
+                                <a href="ffffffffff" style="color: black;" class="todosA">Cronograma Capilar <br></a>
+                                <a href="ffffffffff" style="color: black;" class="todosA">Maquiagem <br></a>
+                                <a href="ffffffffff" style="color: black;" class="todosA">Produtos Masculinos <br></a>
+                                <a href="ffffffffff" style="color: black;" class="todosA">Teste de Tom de Base <br></a>
+                                <a href="ffffffffff" style="color: black;" class="todosA">Skincare <br></a>
+                                <a href="ffffffffff" style="color: black;" class="todosA">Perfumaria <br></a>
+                                <a href="ffffffffff" style="color: black;" class="todosA">Teste da Fragrância Perfeita <br></a>
+                                <a href="ffffffffff" style="color: black;" class="todosA">Corpo e Banho <br></a>
+                                <a href="ffffffffff" style="color: black;" class="todosA">Encontre o Presente ideal! <br></a>
+                                <a href="ffffffffff" style="color: black;" class="todosA">Beauty Week <br></a>
+                                <a href="ffffffffff" style="color: black;" class="todosA">Guia da Beleza Amara <br></a>
+                            </div>
+                                
+                                <div>
+                                   <a href="#"><img src="img/icone insta.png" alt="instagram" class="insta"></a>
+                                   <a href="#"><img src="img/icone_twitter-removebg-preview.png" alt="instagram" class="insta"></a>
+                                   <a href="#"><img src="img/icone_yt-removebg-preview_279x168__1__147x145-removebg-preview.png" alt="instagram" class="insta"></a>
+                                   <a href="#"><img src="img/icone_face_158x153-removebg-preview.png" alt="instagram" class="insta"></a>
+                                </div>   
+                                <hr class="linha">
+                            </footer>
+
+                               
+
+
+
+
+</body>
+</html>
